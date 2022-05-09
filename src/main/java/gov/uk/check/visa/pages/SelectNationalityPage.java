@@ -21,12 +21,12 @@ public class SelectNationalityPage extends Utility {
     WebElement continueButton;
 
     public void selectNationality(String nationality){
-        Reporter.log("Selecting on Yes " + nationalityDropDownList.toString());
+        Reporter.log("Selecting on Yes : " + nationality+ " to " + nationalityDropDownList.toString());
         selectByValueFromDropDown(nationalityDropDownList,nationality);
     }
 
     public void clickNextStepButton(){
-        Reporter.log("Continue on Yes " + continueButton.toString());
+        Reporter.log("Continue on Yes : " + continueButton.toString());
         clickOnElement(continueButton);
     }
 

@@ -18,7 +18,7 @@ public class StartPage extends Utility {
     WebElement startNow;
 
     public void clickStartNow(){
-        Reporter.log("Clicking on Start " + startNow.toString());
+        Reporter.log("Clicking on Start : " + startNow.toString());
         clickOnElement(startNow);
     }
 }

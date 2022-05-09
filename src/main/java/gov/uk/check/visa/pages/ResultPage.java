@@ -18,14 +18,14 @@ public class ResultPage extends Utility {
     @FindBy(xpath = "//div[@id='result-info']//div[2]/h2")
     WebElement resultMessage;
 
-    public String getResultMessage(){
+    public String getResultMessage() {
         Reporter.log("Getting result  " + resultMessage.toString());
         return getTextFromElement(resultMessage);
     }
 
-    public void confirmResultMessage(String expectedMessage){
+    public void confirmResultMessage(String expectedMessage) {
         //System.out.println(getResultMessage());
-        Reporter.log("Asserting result with " +expectedMessage  );
-        Assert.assertTrue(expectedMessage!=getResultMessage(),"Test Failed");
+        Reporter.log("Asserting result with " + expectedMessage);
+        Assert.assertTrue(expectedMessage != getResultMessage(), "Test Failed");
     }
 }

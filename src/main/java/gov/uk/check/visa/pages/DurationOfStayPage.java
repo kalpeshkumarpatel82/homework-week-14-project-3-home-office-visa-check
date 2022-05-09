@@ -35,7 +35,7 @@ public class DurationOfStayPage extends Utility {
     }
 
     public void clickNextStepButton() {
-        Reporter.log("Clicking on next " + nextStepButton.toString());
+        Reporter.log("Clicking on next : " + nextStepButton.toString());
         clickOnElement(nextStepButton);
     }
 }

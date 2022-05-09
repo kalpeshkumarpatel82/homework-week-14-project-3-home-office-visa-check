@@ -23,7 +23,7 @@ public class WorkTypePage extends Utility {
     List<WebElement> selectJobtypeList;
 
     public void selectJobType(String job) {
-        Reporter.log("Selcting job type " + selectJobtypeList.toString());
+        Reporter.log("Selecting job type : "+ job+ " to " + selectJobtypeList.toString());
         int size = selectJobtypeList.size();
         for (int i = 0; i < size; i++) {
             String val = selectJobtypeList.get(i).getAttribute("value");
@@ -34,7 +34,7 @@ public class WorkTypePage extends Utility {
     }
 
     public void clickNextStepButton() {
-        Reporter.log("Clicking on Next " + nextStepButton.toString());
+        Reporter.log("Clicking on Next : " + nextStepButton.toString());
         clickOnElement(nextStepButton);
     }
 }

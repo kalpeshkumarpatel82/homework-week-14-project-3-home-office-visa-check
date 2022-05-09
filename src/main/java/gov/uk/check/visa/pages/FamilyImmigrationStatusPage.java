@@ -31,12 +31,11 @@ public class FamilyImmigrationStatusPage extends Utility {
 
         switch (status) {
             case "yes":
-                Reporter.log("Clicking on Yes " + yesRadio.toString());
+                Reporter.log("Clicking on Yes : " + status + " to " + yesRadio.toString());
                 clickOnElement(yesRadio);
-
                 break;
             case "no":
-                Reporter.log("Clicking on No " + noRadio.toString());
+                Reporter.log("Clicking on No : " + status + " to " + noRadio.toString());
                 clickOnElement(noRadio);
                 break;
         }

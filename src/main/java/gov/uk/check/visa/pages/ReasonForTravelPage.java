@@ -37,7 +37,7 @@ public class ReasonForTravelPage extends Utility {
 
 
     public void clickNextStepButton() {
-        Reporter.log("Clicking on Next " + nextStepButton.toString());
+        Reporter.log("Clicking on Next : " + nextStepButton.toString());
         clickOnElement(nextStepButton);
     }
 
